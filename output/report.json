@@ -1,0 +1,142 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-06-27T20:52:27.987Z",
+    "end": "2018-06-27T20:52:33.782Z",
+    "duration": 5795,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "1bd45a1a-3872-4a12-a79b-1ed86c328366",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "591b1d03-9cd2-453c-baeb-a2fbe31e3f46",
+        "title": "Add a new ToDo",
+        "fullFile": "/Users/macbook/Desktop/repos/codecept-intro/features/add_a_new_todo_test.js",
+        "file": "/features/add_a_new_todo_test.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook: codeceptjs.beforeSuite",
+            "fullTitle": "Add a new ToDo \"before all\" hook: codeceptjs.beforeSuite",
+            "timedOut": false,
+            "duration": 1,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteSetup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "c1583485-6acf-4251-b6c6-cdbc39aeb437",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"before each\" hook: codeceptjs.before",
+            "fullTitle": "Add a new ToDo \"before each\" hook: codeceptjs.before",
+            "timedOut": false,
+            "duration": 2004,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.setup(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "4f596151-01c1-4481-8204-54a528d75f81",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after all\" hook: codeceptjs.afterSuite",
+            "fullTitle": "Add a new ToDo \"after all\" hook: codeceptjs.afterSuite",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.suiteTeardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "1d9b8077-452a-49c6-8754-97b42e145ab1",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"after each\" hook: finalize codeceptjs",
+            "fullTitle": "Add a new ToDo \"after each\" hook: finalize codeceptjs",
+            "timedOut": false,
+            "duration": 137,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "scenario.teardown(suite)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "28ef10c0-8c80-4c2f-bbaa-7c1256e7ffb7",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "Add a new todo and cleanup at the end",
+            "fullTitle": "Add a new ToDo: Add a new todo and cleanup at the end",
+            "timedOut": false,
+            "duration": 3619,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "context": "[\n  {\n    \"title\": \"Test completed\",\n    \"value\": \"./todo-created.png\"\n  },\n  \"./todo-removed.png\"\n]",
+            "code": "I.amOnPage('/');\nI.waitForElement('input#new-todo');\nI.say('The website is loaded');\n// Add a new to-do\nI.addNewTodo('Create workshop introduction CodeceptJS');\n\n// Cleanup\nI.moveCursorTo('div.view label');\nI.click('.destroy');\n// Assert the to-do is deleted    \nI.dontSee('introduction CodeceptJS');\nI.saveScreenshot('todo-removed.png');\nI.addMochawesomeContext({title: \"Test completed\", \n    value: \"./todo-created.png\"});\nI.addMochawesomeContext(\"./todo-removed.png\");",
+            "err": {},
+            "isRoot": false,
+            "uuid": "311ce386-7a54-41eb-a904-cb33b770c412",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "311ce386-7a54-41eb-a904-cb33b770c412"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 3619,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 0
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 0
+  },
+  "copyrightYear": 2018
+}

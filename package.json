@@ -1,0 +1,25 @@
+{
+  "name": "codecept-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "rimraf output",
+    "test": "codeceptjs run --reporter mocha-multi"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-subset": "^1.6.0",
+    "codeceptjs": "^1.3.0",
+    "mocha-junit-reporter": "^1.17.0",
+    "mocha-multi": "^1.0.1",
+    "mochawesome": "^3.0.2",
+    "puppeteer": "^1.5.0",
+    "unirest": "^0.5.1"
+  },
+  "dependencies": {
+    "faker": "^4.1.0"
+  }
+}
